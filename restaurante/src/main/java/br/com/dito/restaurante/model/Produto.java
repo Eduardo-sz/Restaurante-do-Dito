@@ -9,10 +9,9 @@ public class Produto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+
     private String nome;
     private Double preco;
-
-    //getters e setters
 
     public Long getId() {
         return id;
@@ -20,6 +19,14 @@ public class Produto {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(Double preco) {
+        this.preco = preco;
     }
 
     public String getNome() {
@@ -30,11 +37,4 @@ public class Produto {
         this.nome = nome;
     }
 
-    public Double getPreco() {
-        return preco;
-    }
-
-    public void setPreco(Double preco) {
-        this.preco = preco;
-    }
 }
